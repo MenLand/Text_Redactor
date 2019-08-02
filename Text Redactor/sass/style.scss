@@ -1,0 +1,89 @@
+@import "_variables";
+@import "_mixins";
+@import "_newElement";
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}
+
+textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: $font;
+    resize: none;
+}
+
+.main-inner {
+    width: 600px;
+    margin: 70px auto;
+    box-shadow: $shadow;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+
+
+    &_title {
+        background-color: $mainColor;
+        h1 {
+            font-style: italic;
+            margin: 0;
+            padding: 20px 0;
+            text-shadow: 1px 1px white,
+                         2px 2px white;
+        }
+    }
+
+    &_contents {
+        padding: 10px 10px;
+        border-top: 1px solid rgba(0,0,0,.3);
+
+
+        &_form {
+           
+            textarea {                   
+                margin: 0; 
+                width: 100%;  
+                min-height: 150px;    
+                outline: none;
+                padding: .5em;
+                border-radius: 5px;
+            }
+
+            button {
+                @include button();
+            }
+
+            &_information {
+                margin-top: 5px;
+                display: flex;
+
+                p {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex: 1;
+                }
+
+                input {
+                    margin-left: 30px;
+                }
+            }
+        }
+        
+    }
+}
+
+section {
+    margin: 0 auto;
+    width: 600px;
+    padding: 10px;
+}
+

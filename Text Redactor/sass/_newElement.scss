@@ -1,0 +1,70 @@
+@import "_variables";
+@import "_mixins";
+
+.main-field {
+    box-shadow: $shadow;
+    margin-bottom: 30px;
+
+
+    &-text {
+        padding: 20px;
+
+    }
+
+    &-information {
+        border-top: 1px solid rgba(0,0,0,.5);
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+
+        & p {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &-edit {
+        @include button();
+    }
+
+    &-delete {
+        @include button();
+    }
+
+    &-save {
+        @include button();
+    }
+
+    &-cancel {
+        @include button();
+    }
+
+
+
+
+}
+
+.textarea-edit {
+    display: block;
+    padding: 20px;
+    border: none;
+}
+
+.hashTag {
+    font-style: italic;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    color: lighten(blue, 20%);
+
+    &:hover {        
+        border-bottom: 1px solid tomato;
+        cursor: pointer;
+    }
+    
+    &:not(:last-child):after {
+        content: ', ';
+        white-space: pre;
+    }
+}

@@ -1,0 +1,118 @@
+.main-field {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px; }
+  .main-field-text {
+    padding: 20px; }
+  .main-field-information {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 10px; }
+    .main-field-information p {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap; }
+  .main-field-edit {
+    width: 7em;
+    padding: 0.7em;
+    background: none;
+    border-radius: 3px;
+    font-style: italic; }
+  .main-field-delete {
+    width: 7em;
+    padding: 0.7em;
+    background: none;
+    border-radius: 3px;
+    font-style: italic; }
+  .main-field-save {
+    width: 7em;
+    padding: 0.7em;
+    background: none;
+    border-radius: 3px;
+    font-style: italic; }
+  .main-field-cancel {
+    width: 7em;
+    padding: 0.7em;
+    background: none;
+    border-radius: 3px;
+    font-style: italic; }
+
+.textarea-edit {
+  display: block;
+  padding: 20px;
+  border: none; }
+
+.hashTag {
+  font-style: italic;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+  color: #6666ff; }
+  .hashTag:hover {
+    border-bottom: 1px solid tomato;
+    cursor: pointer; }
+  .hashTag:not(:last-child):after {
+    content: ', ';
+    white-space: pre; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Consolas", Arial, Helvetica, sans-serif; }
+
+textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Consolas", Arial, Helvetica, sans-serif;
+  resize: none; }
+
+.main-inner {
+  width: 600px;
+  margin: 70px auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 20px; }
+  .main-inner_title {
+    background-color: #f0db4f; }
+    .main-inner_title h1 {
+      font-style: italic;
+      margin: 0;
+      padding: 20px 0;
+      text-shadow: 1px 1px white, 2px 2px white; }
+  .main-inner_contents {
+    padding: 10px 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3); }
+    .main-inner_contents_form textarea {
+      margin: 0;
+      width: 100%;
+      min-height: 150px;
+      outline: none;
+      padding: .5em;
+      border-radius: 5px; }
+    .main-inner_contents_form button {
+      width: 7em;
+      padding: 0.7em;
+      background: none;
+      border-radius: 3px;
+      font-style: italic; }
+    .main-inner_contents_form_information {
+      margin-top: 5px;
+      display: flex; }
+      .main-inner_contents_form_information p {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1; }
+      .main-inner_contents_form_information input {
+        margin-left: 30px; }
+
+section {
+  margin: 0 auto;
+  width: 600px;
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
